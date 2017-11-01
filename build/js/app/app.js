@@ -30,3 +30,7 @@ render(
     </Provider>,
     document.getElementById('root')
 );
+
+// TODO:
+// stylelitnt with scss
+// scss
