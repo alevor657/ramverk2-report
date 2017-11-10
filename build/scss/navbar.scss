@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #4ABDAC;
+
+    display: flex;
+    // position: fixed;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+    // margin: 1em;
+    // padding: 1em;
+
+    .nav-link {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        height: 40px;
+        color: black;
+    }
+
+    .selected {
+        text-decoration: underline;
+        background-color: #FC4A1A;
+    }
+}

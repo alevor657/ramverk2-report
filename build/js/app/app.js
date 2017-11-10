@@ -6,6 +6,10 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Index from './components/Index';
 import About from './components/About';
+import Navbar from './components/common/Navbar';
+
+import 'normalize.css';
+import '../../scss/main.scss';
 
 const store = createStore(
     combineReducers({
@@ -19,6 +23,7 @@ render(
     <Provider store={store}>
         <BrowserRouter>
             <div>
+                <Navbar/>
                 <Route exact path="/" component={Index}>
                 </Route>
                 <Route exact path="/about" component={About}>
