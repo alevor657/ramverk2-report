@@ -8,7 +8,7 @@ var staticFiles = path.join(__dirname, '../dist');
 
 app.use(express.static(staticFiles));
 
-app.get('/', function(req, res) {
+app.get('*', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 

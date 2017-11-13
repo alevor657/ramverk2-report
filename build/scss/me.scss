@@ -1,14 +1,17 @@
 .me-img {
-    width: 400px;
+    width: 100%;
+    height: auto;
     display: inline-block;
-    float: left;
 }
 
 .me-text {
-    display: inline-block;
-    float: left;
+    flex: 0.5 1;
 
     p {
         display: inline-block;
     }
+}
+
+.img-wrap {
+    flex: 0.5 1;
 }

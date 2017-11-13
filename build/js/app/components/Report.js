@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 class Report extends Component {
     constructor(props) {
@@ -8,10 +7,8 @@ class Report extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <h1>Report page</h1>
-                <Link to='/about'>About</Link>
-                {/* {this.props.children} */}
             </div>
         );
     }

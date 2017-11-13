@@ -6,7 +6,9 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Index from './components/Index';
 import About from './components/About';
+import Report from './components/Report';
 import Navbar from './components/common/Navbar';
+import Footer from './components/common/Footer';
 
 import 'normalize.css';
 import '../../scss/main.scss';
@@ -28,8 +30,9 @@ render(
                 </Route>
                 <Route exact path="/about" component={About}>
                 </Route>
-                <Route exact path="/report" component={About}>
+                <Route exact path="/report" component={Report}>
                 </Route>
+                <Footer/>
             </div>
         </BrowserRouter>
     </Provider>,
