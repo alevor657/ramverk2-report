@@ -10,6 +10,7 @@ class About extends Component {
             <div className="container">
                 <h1>About page</h1>
                 <p>Denna sidan är skapat i samband med kuser ramverk2 som jag läser på BTH.</p>
+                <a target="_blank" href="https://github.com/alevor657/ramverk2-report" rel="noopener noreferrer">Github</a>
                 <div className="gallery-container">
                     <div>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>

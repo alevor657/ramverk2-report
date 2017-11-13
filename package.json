@@ -7,10 +7,10 @@
     "webpack": "webpack",
     "start": "node build/server.js",
     "install": "npm install",
-    "test": "npm run eslint; npm run jest; npm run stylelint; exit 0;",
+    "test": "npm run eslint && npm run stylelint",
     "stylelint": "stylelint \"**/*.scss\"",
-    "jest": "jest",
-    "eslint": "eslint .; exit 0"
+    "eslint": "eslint .; exit 0",
+    "jest": "jest"
   },
   "repository": {
     "type": "git",
