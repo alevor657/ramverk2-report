@@ -6,8 +6,7 @@
   "scripts": {
     "webpack": "webpack",
     "start": "node build/server.js",
-    "install": "npm install && exit 0",
-    "test": "npm run eslint && npm run stylelint && exit 0",
+    "test": "npm run eslint && npm run stylelint",
     "stylelint": "stylelint \"**/*.scss\"",
     "eslint": "eslint .; exit 0",
     "jest": "jest"
