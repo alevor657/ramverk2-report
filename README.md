@@ -2,13 +2,13 @@
 [![BCH compliance](https://bettercodehub.com/edge/badge/alevor657/ramverk2-report?branch=master)](https://bettercodehub.com/)
 
 
-*** Usage
+### Usage
 
     npm i
     npm start
 
 
-*** Testing
+### Testing
 
     npm test
 
