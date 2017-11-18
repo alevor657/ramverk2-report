@@ -6,10 +6,15 @@
   "scripts": {
     "webpack": "webpack",
     "start": "node app/server.js",
+
     "test": "npm run eslint && npm run stylelint",
     "stylelint": "stylelint \"**/*.scss\"",
     "eslint": "eslint .; exit 0",
-    "jest": "jest"
+    "jest": "jest",
+
+    "node6": "docker-compose up node6",
+    "node7": "docker-compose up node7",
+    "node8": "docker-compose up npde8"
   },
   "repository": {
     "type": "git",

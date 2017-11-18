@@ -12,6 +12,12 @@
 
     npm test
 
+### Docker containers
+
+In order to start application in either node6, 7 or 8 run following:
+
+    (sudo?) npm run node[6|7|8]
+
 
 -------------------------
 
