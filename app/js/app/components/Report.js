@@ -25,6 +25,20 @@ class Report extends Component {
                 <h3>Jobbar du med Markdown för innehållet, eller annat liknande?</h3>
                 <p>Nej, jag kör direkt i React. Men jag kommer troligen att använda det i fall vi kommer långt med detta JS klient sidan röda tråden. Jag kommer att skapa ett API som i sin tur kanske parsar md innehåll som kommer tas ifrån en databas. Kankse.</p>
 
+                <h2>kmom02</h2>
+
+                <h3>Har du jobbat med Docker eller andra virtualiseringstekniker innan?</h3>
+                <p>Njoo, jag har jobbat med virtual box sedan tidigare, men inte annat. Men docker verkar vara ett bättre alternativ till den stora systemet som man har installerat om man använder sig av VBox. </p>
+
+                <h3>Hur ser du på möjligheterna att använda dig av Docker för att jobba med tester av ditt repo?</h3>
+                <p>Docker gör så att jag kan köra min lilla program i olika node versioner, samt med olika värde på NODE_ENV. Jag tror att docker var skapat för att lösa andra typer av problem, men den fungerar väl även i detta sammanhanget.</p>
+
+                <h3>Gick allt smidigt eller stötte du på problem?</h3>
+                <p>Inga problem för mig alls. Det var inte krångligt att faktiskt fatta vad det hela egentligen handlar om, men annars nästan smärtfritt. Jag kör ju Ubuntu, så sådant kan inte krångla i teorin.</p>
+                <p>Det var lite jobbigt med att öppna portar på min kontainer, men så fort jag fattade hur det går så löste det sig. Inga konstigheter alls. Det var en enkel kmom för mig måste jag säga.</p>
+
+                <h3>Skapade du din egen image, berätta om den?</h3>
+                <p>Nej, för att jag tycker inte att det ens behövs. Det finns ju en node image på dockerstore, så ingen anledning med att skapa ett nytt.</p>
             </div>
         );
     }
