@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/js/app/components/Report.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">app/js/app/components</a> Report.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>2/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>2/2</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
+&nbsp;
+class Report extends Component {
+    constructor(props) {
+        super(props);
+    }
+&nbsp;
+    render() {
+        return (
+            &lt;div className="container"&gt;
+                &lt;h1&gt;Report page&lt;/h1&gt;
+&nbsp;
+                &lt;h2&gt;kmom01&lt;/h2&gt;
+&nbsp;
+                &lt;h3&gt;Berätta utförligt om din syn på Express och Pug och hur de samverkar. Relatera till andra ramverk du jobbat med. Lyft fram de fördelar och eventuellt nackdelar du finner, eller bara notera skillnader och likheter.&lt;/h3&gt;
+                &lt;p&gt;Jag tycker att Express är en smidig server som är enkel att använda. Jag valda att inte använda Pug och försökte att göra saker annorlunda. Jag använder React och webpack i samband med Express för att jag ville testa på något nytt. Jag använder inga XHR förfrågor i samband med API servrar för att jag inte tycker att det behövs i detta sammanhang. Men om det dyker upp rum för sådana experiment då kommer jag säkert att skapa en liten Express API som kommer att servera data till min front. Då kommer jag använda Redux. Nu så använder jag React router, den delen som löser routing på klient sidan. Så att jag har bara en enda route som serverar en enda html template i min Express server. Jag kanske kommer att prova server rendering också. &lt;/p&gt;
+&nbsp;
+                &lt;h3&gt;Berätta om din katalogstruktur och hur du organiserade din kod, hur tänkte du?&lt;/h3&gt;
+                &lt;p&gt;Jag har två mappar, en för fiiler där jag jobbar med koden och en för builds, om man kan säga så. Eftersom jag använder webpack så fungerar det smidigt. Just nu så har jag inget produktionsläge eller något sådant, det enda jag egentligen gör är att jag samlar alla mina Component eller moduler i en enda kodklump. I build mappen så har jag en mapp för sass filer, React komponent, och bilder. Inget avancerat. Jag transpilerar koden till ES5 med hjälp av webpack.
+                Jag har också en index.html fil och en server. Just nu så extraherar jag inte de till publika mappen, men jag planerar att göra så i fall projektet kommer att växa. Jag har självklart fixat till kodanalys eller linters.&lt;/p&gt;
+&nbsp;
+                &lt;h3&gt;Använde du någon form av scaffolding som Express erbjuder?&lt;/h3&gt;
+                &lt;p&gt;Nej, det gjorde jag inte eftersom min server var väldigt liten. Inget behov alltså.&lt;/p&gt;
+&nbsp;
+                &lt;h3&gt;Jobbar du med Markdown för innehållet, eller annat liknande?&lt;/h3&gt;
+                &lt;p&gt;Nej, jag kör direkt i React. Men jag kommer troligen att använda det i fall vi kommer långt med detta JS klient sidan röda tråden. Jag kommer att skapa ett API som i sin tur kanske parsar md innehåll som kommer tas ifrån en databas. Kankse.&lt;/p&gt;
+&nbsp;
+                &lt;h2&gt;kmom02&lt;/h2&gt;
+&nbsp;
+                &lt;h3&gt;Har du jobbat med Docker eller andra virtualiseringstekniker innan?&lt;/h3&gt;
+                &lt;p&gt;Njoo, jag har jobbat med virtual box sedan tidigare, men inte annat. Men docker verkar vara ett bättre alternativ till den stora systemet som man har installerat om man använder sig av VBox. &lt;/p&gt;
+&nbsp;
+                &lt;h3&gt;Hur ser du på möjligheterna att använda dig av Docker för att jobba med tester av ditt repo?&lt;/h3&gt;
+                &lt;p&gt;Docker gör så att jag kan köra min lilla program i olika node versioner, samt med olika värde på NODE_ENV. Jag tror att docker var skapat för att lösa andra typer av problem, men den fungerar väl även i detta sammanhanget.&lt;/p&gt;
+&nbsp;
+                &lt;h3&gt;Gick allt smidigt eller stötte du på problem?&lt;/h3&gt;
+                &lt;p&gt;Inga problem för mig alls. Det var inte krångligt att faktiskt fatta vad det hela egentligen handlar om, men annars nästan smärtfritt. Jag kör ju Ubuntu, så sådant kan inte krångla i teorin.&lt;/p&gt;
+                &lt;p&gt;Det var lite jobbigt med att öppna portar på min kontainer, men så fort jag fattade hur det går så löste det sig. Inga konstigheter alls. Det var en enkel kmom för mig måste jag säga.&lt;/p&gt;
+&nbsp;
+                &lt;h3&gt;Skapade du din egen image, berätta om den?&lt;/h3&gt;
+                &lt;p&gt;Nej, för att jag tycker inte att det ens behövs. Det finns ju en node image på dockerstore, så ingen anledning med att skapa ett nytt.&lt;/p&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+&nbsp;
+export default Report;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Nov 21 2017 03:22:16 GMT+0100 (CET)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

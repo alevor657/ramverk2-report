@@ -1,6 +1,6 @@
 module.exports = {
     target: 'web',
-    entry: './app/js/app/app.js',
+    entry: './app/js/app/index.js',
     devtool: 'cheap-module-eval-source-map',
     output: {
         path: __dirname + '/dist',

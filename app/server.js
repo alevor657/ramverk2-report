@@ -27,3 +27,5 @@ app.listen(port, function(error) {
     );
     // open(`http://localhost:${port}`);
 });
+
+module.exports = app;

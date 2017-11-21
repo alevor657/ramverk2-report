@@ -24,3 +24,7 @@ In order to start application in either node6, 7 or 8 run following:
 # ramverk2-report
 Report application build in react with webpack
 I also use redux, react-router
+
+### Application is available at
+
+http://80.78.218.152:1337/
