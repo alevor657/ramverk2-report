@@ -10,9 +10,13 @@
         "stylelint": "stylelint \"**/*.scss\"",
         "eslint": "eslint .; exit 0",
         "jest": "jest --coverage",
-        "node6": "docker-compose up node6",
-        "node7": "docker-compose up node7",
-        "node8": "docker-compose up npde8"
+        "coverage": "open('coverage/lcov-report/index.html')",
+        "node_latest": "docker-compose up node_latest",
+        "node_6": "docker-compose up node6",
+        "node_8": "docker-compose up node8",
+        "test_latest": "docker-compose run node_latest npm test",
+        "test_6": "docker-compose run node6 npm test",
+        "test_8": "docker-compose run node8 npm test"
     },
     "repository": {
         "type": "git",

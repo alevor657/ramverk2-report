@@ -1,5 +1,5 @@
 TN:
-SF:/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/server.js
+SF:/app/app/server.js
 FN:13,(anonymous_0)
 FN:17,(anonymous_1)
 FNF:2
@@ -23,14 +23,14 @@ DA:31,1
 LF:14
 LH:12
 BRDA:6,0,0,1
-BRDA:6,0,1,1
+BRDA:6,0,1,0
 BRDA:18,1,0,0
 BRDA:18,1,1,1
 BRF:4
-BRH:3
+BRH:2
 end_of_record
 TN:
-SF:/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/App.js
+SF:/app/app/js/app/App.js
 FN:25,(anonymous_0)
 FNF:1
 FNH:1
@@ -45,7 +45,7 @@ BRF:2
 BRH:1
 end_of_record
 TN:
-SF:/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/About.js
+SF:/app/app/js/app/components/About.js
 FN:4,(anonymous_0)
 FN:8,(anonymous_1)
 FNF:2
@@ -60,7 +60,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/Index.js
+SF:/app/app/js/app/components/Index.js
 FN:5,(anonymous_0)
 FN:9,(anonymous_1)
 FNF:2
@@ -75,7 +75,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/Report.js
+SF:/app/app/js/app/components/Report.js
 FN:4,(anonymous_0)
 FN:8,(anonymous_1)
 FNF:2
@@ -90,7 +90,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/common/Footer.js
+SF:/app/app/js/app/components/common/Footer.js
 FN:4,(anonymous_0)
 FNF:1
 FNH:1
@@ -102,7 +102,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/common/Navbar.js
+SF:/app/app/js/app/components/common/Navbar.js
 FN:5,(anonymous_0)
 FNF:1
 FNH:1
@@ -114,7 +114,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/internal/NotFound.js
+SF:/app/app/js/app/components/internal/NotFound.js
 FN:3,(anonymous_0)
 FNF:1
 FNH:1

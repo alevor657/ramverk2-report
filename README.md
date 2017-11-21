@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/alevor657/ramverk2-report.svg?branch=master)](https://travis-ci.org/alevor657/ramverk2-report)
 [![BCH compliance](https://bettercodehub.com/edge/badge/alevor657/ramverk2-report?branch=master)](https://bettercodehub.com/)
-
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/alevor657/ramverk2-report/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/alevor657/ramverk2-report/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/alevor657/ramverk2-report/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/alevor657/ramverk2-report/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/alevor657/ramverk2-report/badges/build.png?b=master)](https://scrutinizer-ci.com/g/alevor657/ramverk2-report/build-status/master)
 
 ### Usage
 
@@ -12,11 +14,23 @@
 
     npm test
 
+Or you have a possibility to run the tests by starting up docker containers
+
+    npm run test_latest
+    npm run test_6
+    npm run test_8
+
+##### Code coverage
+
+You can find in in coverage/lcov-report. Open up index.html file.
+
 ### Docker containers
 
 In order to start application in either node6, 7 or 8 run following:
 
-    (sudo?) npm run node[6|7|8]
+    npm run node_latest
+    npm run node_6
+    npm run node_8
 
 
 -------------------------
