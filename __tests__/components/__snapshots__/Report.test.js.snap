@@ -64,5 +64,32 @@ exports[`Report page renders 1`] = `
   <p>
     Nej, för att jag tycker inte att det ens behövs. Det finns ju en node image på dockerstore, så ingen anledning med att skapa ett nytt.
   </p>
+  <h2>
+    kmom03
+  </h2>
+  <h3>
+    Berätta vilka tekniker/verktyg du valde för enhetstester och kodtäckning och varför?
+  </h3>
+  <p>
+    Jag valde Jest för att jag är inte inne på enhetstestning i JS så det spelar ingen stor roll i vad man väljer. Jest är driven av Facebook så den kan inte vara oanvändbar, så jag bara valde det första stora test libben jag hittade. Jag har byggt ett API, så jag använder mig av supertest för att testa saker. Jag har också en mongo databas tillsammans med mongoose bakom APIet, så jag har inträffat problem med testing. Jag ville inte mocka något och valde att använda min RPI som nu kör en Apache server, MySQL, PostgreSQL, ett Python API i Tornado, en Flask applikation, en node applikation och en mongodb server. Jag har nu 600mb av ram att spendera, så det låter bra. Principen är enkel - när du kör någon slags av test, om det är docker eller vanlig npm test spelar ingen roll. Test suiten kommer att använda min testdatabas. Så har jag löst det. Vet inte om det är bra taktik, kommentera och reflektera gärna över de tester jag har skapat, för att jag är inte helt säker på om de är faktiskt bra.
+  </p>
+  <h3>
+    Berätta om cin CI-kedja och reflektera över de valen du gjorde?
+  </h3>
+  <p>
+    Jag har nu två favoriter - Scrutinizer och Travis. De gör ungefär samma sak dock så är Scrutinizer mer avancerat när det gäller kodanalys. Jag har inte hittat några andra CI verktyg som erbjuder mer funktionalitet/nya badges. När jag kör tester i kedjan så kopplar de upp sig till min mongodb på rpi.
+  </p>
+  <h3>
+    Reflektera över hur det gick att integrera enhetstesterna i olika Docker-kontainerns och om du ser någon nytta med detta.
+  </h3>
+  <p>
+    Det var rätt enkelt, jag löste det i kmom02 så det var en copy-paste sak. Dock tror jag inte att det finns nytta att köra tester i olika node miljö för att applikationen förväntas inte snurra på maskiner med ingen tillgång till sudo apt-get update/upgrade. Fattar inte meningen med detta, men det är ändå bra att testa hur det går. Hur väl lyckades du utvärdera TDD-konceptet och vilka är dina reflektioner? Jag hade för många saker på mig att lösa, så jag prioriterade bort TDD och fokuserade på appen istället. Jag lyckades skapa ett skyddat API som baseras på JSON Web Tokens. Det går ut på att registrera sig i databasen, få tillbaka en token och accessa sin data.
+  </p>
+  <h3>
+    Berätta om tankarna kring din klient/server applikation och nämn de tekniker du använder..
+  </h3>
+  <p>
+    Som sagt, jag använder JWT, Express, mongoDB, mongoose, morgan, joi (för att verifiera data) och lite andra bra att ha saker. Jag kommer att skapa en React klient till APIet, så att man kan registrera sig och få tillgång till sin chatthistorik (jag planerar att skapa en chatt). Så är min plan. 
+  </p>
 </div>
 `;

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1511235308777" clover="3.2.0">
-  <project timestamp="1511235308777" name="All files">
-    <metrics statements="25" coveredstatements="23" conditionals="6" coveredconditionals="3" methods="12" coveredmethods="12" elements="43" coveredelements="38" complexity="0" loc="25" ncloc="25" packages="5" files="8" classes="8">
+<coverage generated="1511540853995" clover="3.2.0">
+  <project timestamp="1511540853996" name="All files">
+    <metrics statements="25" coveredstatements="23" conditionals="6" coveredconditionals="4" methods="12" coveredmethods="12" elements="43" coveredelements="39" complexity="0" loc="25" ncloc="25" packages="5" files="8" classes="8">
       <package name="app">
-        <metrics statements="14" coveredstatements="12" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <file name="server.js" path="/app/app/server.js">
-          <metrics statements="14" coveredstatements="12" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <metrics statements="14" coveredstatements="12" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <file name="server.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/server.js">
+          <metrics statements="14" coveredstatements="12" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
           <line num="3" count="1" type="stmt"/>
           <line num="4" count="1" type="stmt"/>
           <line num="5" count="1" type="stmt"/>
-          <line num="6" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="6" count="1" type="cond" truecount="2" falsecount="0"/>
           <line num="7" count="1" type="stmt"/>
           <line num="11" count="1" type="stmt"/>
           <line num="13" count="1" type="stmt"/>
@@ -24,7 +24,7 @@
       </package>
       <package name="app.js.app">
         <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <file name="App.js" path="/app/app/js/app/App.js">
+        <file name="App.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/App.js">
           <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
           <line num="16" count="1" type="stmt"/>
           <line num="26" count="1" type="stmt"/>
@@ -32,17 +32,17 @@
       </package>
       <package name="app.js.app.components">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-        <file name="About.js" path="/app/app/js/app/components/About.js">
+        <file name="About.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/About.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
           <line num="5" count="1" type="stmt"/>
           <line num="9" count="1" type="stmt"/>
         </file>
-        <file name="Index.js" path="/app/app/js/app/components/Index.js">
+        <file name="Index.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/Index.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
           <line num="6" count="1" type="stmt"/>
           <line num="10" count="1" type="stmt"/>
         </file>
-        <file name="Report.js" path="/app/app/js/app/components/Report.js">
+        <file name="Report.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/Report.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
           <line num="5" count="1" type="stmt"/>
           <line num="9" count="1" type="stmt"/>
@@ -50,18 +50,18 @@
       </package>
       <package name="app.js.app.components.common">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <file name="Footer.js" path="/app/app/js/app/components/common/Footer.js">
+        <file name="Footer.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/common/Footer.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="5" count="1" type="stmt"/>
         </file>
-        <file name="Navbar.js" path="/app/app/js/app/components/common/Navbar.js">
+        <file name="Navbar.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/common/Navbar.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="6" count="1" type="stmt"/>
         </file>
       </package>
       <package name="app.js.app.components.internal">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <file name="NotFound.js" path="/app/app/js/app/components/internal/NotFound.js">
+        <file name="NotFound.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/internal/NotFound.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="3" count="1" type="stmt"/>
         </file>

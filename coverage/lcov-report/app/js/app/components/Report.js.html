@@ -90,7 +90,26 @@
 45
 46
 47
-48</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -99,6 +118,25 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -178,6 +216,25 @@ class Report extends Component {
 &nbsp;
                 &lt;h3&gt;Skapade du din egen image, berätta om den?&lt;/h3&gt;
                 &lt;p&gt;Nej, för att jag tycker inte att det ens behövs. Det finns ju en node image på dockerstore, så ingen anledning med att skapa ett nytt.&lt;/p&gt;
+&nbsp;
+                &lt;h2&gt;kmom03&lt;/h2&gt;
+&nbsp;
+                &lt;h3&gt;Berätta vilka tekniker/verktyg du valde för enhetstester och kodtäckning och varför?&lt;/h3&gt;
+                &lt;p&gt;Jag valde Jest för att jag är inte inne på enhetstestning i JS så det spelar ingen stor roll i vad man väljer. Jest är driven av Facebook så den kan inte vara oanvändbar, så jag bara valde det första stora test libben jag hittade. Jag har byggt ett API, så jag använder mig av supertest för att testa saker.
+                Jag har också en mongo databas tillsammans med mongoose bakom APIet, så jag har inträffat problem med testing. Jag ville inte mocka något och valde att använda min RPI som nu kör en Apache server, MySQL, PostgreSQL, ett Python API i Tornado, en Flask applikation, en node applikation och en mongodb server. Jag har nu 600mb av ram att spendera, så det låter bra. Principen är enkel - när du kör någon slags av test, om det är docker eller vanlig npm test spelar ingen roll. Test suiten kommer att använda min testdatabas.
+                Så har jag löst det. Vet inte om det är bra taktik, kommentera och reflektera gärna över de tester jag har skapat, för att jag är inte helt säker på om de är faktiskt bra.&lt;/p&gt;
+&nbsp;
+                &lt;h3&gt;Berätta om cin CI-kedja och reflektera över de valen du gjorde?&lt;/h3&gt;
+                &lt;p&gt;Jag har nu två favoriter - Scrutinizer och Travis. De gör ungefär samma sak dock så är Scrutinizer mer avancerat när det gäller kodanalys. Jag har inte hittat några andra CI verktyg som erbjuder mer funktionalitet/nya badges.
+                När jag kör tester i kedjan så kopplar de upp sig till min mongodb på rpi.&lt;/p&gt;
+&nbsp;
+                &lt;h3&gt;Reflektera över hur det gick att integrera enhetstesterna i olika Docker-kontainerns och om du ser någon nytta med detta.&lt;/h3&gt;
+                &lt;p&gt;Det var rätt enkelt, jag löste det i kmom02 så det var en copy-paste sak. Dock tror jag inte att det finns nytta att köra tester i olika node miljö för att applikationen förväntas inte snurra på maskiner med ingen tillgång till sudo apt-get update/upgrade. Fattar inte meningen med detta, men det är ändå bra att testa hur det går.
+                Hur väl lyckades du utvärdera TDD-konceptet och vilka är dina reflektioner?
+                Jag hade för många saker på mig att lösa, så jag prioriterade bort TDD och fokuserade på appen istället. Jag lyckades skapa ett skyddat API som baseras på JSON Web Tokens. Det går ut på att registrera sig i databasen, få tillbaka en token och accessa sin data.&lt;/p&gt;
+&nbsp;
+                &lt;h3&gt;Berätta om tankarna kring din klient/server applikation och nämn de tekniker du använder..&lt;/h3&gt;
+                &lt;p&gt;Som sagt, jag använder JWT, Express, mongoDB, mongoose, morgan, joi (för att verifiera data) och lite andra bra att ha saker. Jag kommer att skapa en React klient till APIet, så att man kan registrera sig och få tillgång till sin chatthistorik (jag planerar att skapa en chatt). Så är min plan. &lt;/p&gt;
             &lt;/div&gt;
         );
     }
@@ -190,7 +247,7 @@ export default Report;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Nov 21 2017 03:35:08 GMT+0000 (UTC)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Nov 24 2017 17:27:33 GMT+0100 (CET)
 </div>
 </div>
 <script src="../../../../prettify.js"></script>
