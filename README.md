@@ -9,6 +9,10 @@
     npm i
     npm start
 
+### Environment vars
+
+    var port = process.env.DBWEBB_PORT || 1337;
+    var socketioPort = process.env.DBWEBB_SOCKETIO_PORT || 1340;
 
 ### Testing
 

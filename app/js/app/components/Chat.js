@@ -12,17 +12,18 @@ class Chat extends Component {
         // Initial state
         this.state = {
             nickname: '',
-            messages: []
+            messages: [],
+            users: []
         };
 
         this.sendMessage = this.sendMessage.bind(this);
         this.saveNick = this.saveNick.bind(this);
         this.getMessage = this.getMessage.bind(this);
+        this.updateUsers = this.updateUsers.bind(this);
 
-
-        // Connect to socket server
-        this.socket = io('localhost:8000');
+        this.socket = io(`${window.location.protocol}//${window.location.hostname}:1340`);
         this.socket.on('chat msg', this.getMessage);
+        this.socket.on('update users', this.updateUsers);
     }
 
     sendMessage(msg) {
@@ -44,6 +45,14 @@ class Chat extends Component {
         this.setState({
             nickname: nick
         });
+
+        this.socket.emit('login', nick);
+    }
+
+    updateUsers(data) {
+        this.setState({
+            users: JSON.parse(data)
+        });
     }
 
     render() {
@@ -51,7 +60,7 @@ class Chat extends Component {
             <div>
                 {this.state.nickname ? (
                     <div className="chat">
-                        <Sidebar users={['user1', 'user2', 'user3']}/>
+                        <Sidebar users={this.state.users}/>
                         <ChatWindow sendMessage={this.sendMessage} history={this.state.messages}/>
                     </div>
                 ) : (
