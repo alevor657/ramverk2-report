@@ -26,6 +26,10 @@ class ChatWindow extends Component {
         });
     }
 
+    componentDidUpdate() {
+        this.lastMsg.scrollIntoView({ behaviour: 'smooth' });
+    }
+
     render() {
         return (
             <div className="chat-window">
@@ -36,6 +40,7 @@ class ChatWindow extends Component {
                             {msg.msg}
                         </p>
                     ))}
+                    <div ref={el => this.lastMsg = el}></div>
                 </div>
                 <div className="send-message">
                     <textarea value={this.state.msg} onChange={this.handleMessageInput}></textarea>
