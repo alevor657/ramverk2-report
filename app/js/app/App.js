@@ -8,6 +8,7 @@ import About from './components/About';
 import Report from './components/Report';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
+import Chat from './components/Chat';
 import NotFound from './components/internal/NotFound';
 
 import 'normalize.css';
@@ -32,6 +33,7 @@ class App extends Component {
                             <Route exact path="/" component={Index}/>
                             <Route path="/about" component={About}/>
                             <Route path="/report" component={Report}/>
+                            <Route path="/chat" component={Chat}/>
                             <Route component={NotFound}/>
                         </Switch>
                         <Footer/>

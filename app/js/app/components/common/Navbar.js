@@ -32,6 +32,15 @@ class Navbar extends Component {
                 >
                     Report
                 </NavLink>
+                <NavLink
+                    activeClassName="selected"
+                    to="/chat"
+                    exact
+                    strict
+                    className="nav-link"
+                >
+                    Chat
+                </NavLink>
             </div>
         );
     }
