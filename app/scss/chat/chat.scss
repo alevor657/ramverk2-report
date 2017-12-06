@@ -6,10 +6,6 @@
     .sidebar {
         width: 20%;
         text-align: center;
-
-        // .username-wrapper {
-        //
-        // }
     }
 
     .chat-window {
@@ -18,10 +14,8 @@
         height: inherit;
         display: flex;
         flex-direction: column;
-        border: 1px solid black;
 
         .messages {
-            border: 1px solid red;
             height: 90%;
             overflow-y: auto;
         }
@@ -34,7 +28,6 @@
 
             textarea {
                 width: 80%;
-                border: 0;
                 padding: 0;
                 height: auto;
             }

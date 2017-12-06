@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">41.67% </span>
+        <span class="strong">37.04% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>10/24</span>
+        <span class='fraction'>10/27</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,14 +30,14 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">16.67% </span>
+        <span class="strong">12.5% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/6</span>
+        <span class='fraction'>1/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">41.67% </span>
+        <span class="strong">38.46% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>10/24</span>
+        <span class='fraction'>10/26</span>
       </div>
     </div>
   </div>
@@ -93,7 +93,12 @@
 48
 49
 50
-51</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+51
+52
+53
+54
+55
+56</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -104,7 +109,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -117,6 +121,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -124,21 +143,12 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -154,7 +164,6 @@ class SocketChat {
         this.onLogin = this.onLogin.bind(this);
         this.onConnection = this.onConnection.bind(this);
 &nbsp;
-&nbsp;
         io.on('connection', this.onConnection);
 &nbsp;
         io.listen(port);
@@ -166,29 +175,35 @@ class SocketChat {
     }
 &nbsp;
 <span class="fstat-no" title="function not covered" >    on</span>NewUser(data) {
-<span class="cstat-no" title="statement not covered" >        console.log('On new user', data, typeof data);</span>
 <span class="cstat-no" title="statement not covered" >        io.emit('new user', data);</span>
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    on</span>Login(user) {
-<span class="cstat-no" title="statement not covered" >        this.users.push(user);</span>
+<span class="fstat-no" title="function not covered" >    on</span>Login(data) {
+<span class="cstat-no" title="statement not covered" >        this.users.push({</span>
+            user: data.nick,
+            id: data.socketId
+        });
 <span class="cstat-no" title="statement not covered" >        io.emit('update users', JSON.stringify(this.users));</span>
     }
 &nbsp;
 <span class="fstat-no" title="function not covered" >    on</span>Disconnect(socket) {
 <span class="cstat-no" title="statement not covered" >        this.connections.splice(this.connections.indexOf(socket), 1);</span>
+<span class="cstat-no" title="statement not covered" >        this.users = this.users.filter(<span class="fstat-no" title="function not covered" >us</span>er =&gt; <span class="cstat-no" title="statement not covered" >user.id !== socket.id)</span>;</span>
+<span class="cstat-no" title="statement not covered" >        io.emit('update users', JSON.stringify(this.users));</span>
 <span class="cstat-no" title="statement not covered" >        console.log('User disconnected');</span>
-<span class="cstat-no" title="statement not covered" >        console.log('Clients conected: ', this.connections.length);</span>
+<span class="cstat-no" title="statement not covered" >        console.log('Clients connected: ', this.connections.length);</span>
     }
 &nbsp;
 <span class="fstat-no" title="function not covered" >    on</span>Connection(socket) {
 <span class="cstat-no" title="statement not covered" >        this.connections.push(socket);</span>
-<span class="cstat-no" title="statement not covered" >        console.log('Clients conected: ', this.connections.length);</span>
+<span class="cstat-no" title="statement not covered" >        console.log('Clients connected: ', this.connections.length);</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >        socket.on('chat msg', this.onChatMsg);</span>
 <span class="cstat-no" title="statement not covered" >        socket.on('new user', this.onNewUser);</span>
 <span class="cstat-no" title="statement not covered" >        socket.on('login', this.onLogin);</span>
-<span class="cstat-no" title="statement not covered" >        socket.on('disconnect', this.onDisconnect);</span>
+<span class="cstat-no" title="statement not covered" >        socket.on('disconnect', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            this.onDisconnect(socket);</span>
+        });
     }
 }
 &nbsp;
@@ -199,7 +214,7 @@ module.exports = SocketChat;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Dec 05 2017 05:59:04 GMT+0100 (CET)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Dec 06 2017 03:28:57 GMT+0100 (CET)
 </div>
 </div>
 <script src="../prettify.js"></script>

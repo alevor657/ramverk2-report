@@ -20,30 +20,35 @@ class SocketChat {
     }
 
     onNewUser(data) {
-        console.log('On new user', data, typeof data);
         io.emit('new user', data);
     }
 
-    onLogin(user) {
-        this.users.push(user);
+    onLogin(data) {
+        this.users.push({
+            user: data.nick,
+            id: data.socketId
+        });
         io.emit('update users', JSON.stringify(this.users));
     }
 
     onDisconnect(socket) {
         this.connections.splice(this.connections.indexOf(socket), 1);
+        this.users = this.users.filter(user => user.id !== socket.id);
+        io.emit('update users', JSON.stringify(this.users));
         console.log('User disconnected');
-        console.log('Clients conected: ', this.connections.length);
-        console.log(this.connections);
+        console.log('Clients connected: ', this.connections.length);
     }
 
     onConnection(socket) {
         this.connections.push(socket);
-        console.log('Clients conected: ', this.connections.length);
+        console.log('Clients connected: ', this.connections.length);
 
         socket.on('chat msg', this.onChatMsg);
         socket.on('new user', this.onNewUser);
         socket.on('login', this.onLogin);
-        socket.on('disconnect', this.onDisconnect);
+        socket.on('disconnect', () => {
+            this.onDisconnect(socket);
+        });
     }
 }
 

@@ -46,12 +46,19 @@ class Chat extends Component {
             nickname: nick
         });
 
-        this.socket.emit('login', nick);
+        this.socket.emit('login', {
+            nick,
+            socketId: this.socket.id
+        });
     }
 
     updateUsers(data) {
+        data = JSON.parse(data);
+
+        const res = data.map(item => item.user);
+
         this.setState({
-            users: JSON.parse(data)
+            users: res
         });
     }
 
