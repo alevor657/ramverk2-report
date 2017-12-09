@@ -1,11 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1512527337158" clover="3.2.0">
-  <project timestamp="1512527337158" name="All files">
-    <metrics statements="98" coveredstatements="39" conditionals="10" coveredconditionals="6" methods="42" coveredmethods="13" elements="150" coveredelements="58" complexity="0" loc="98" ncloc="98" packages="6" files="13" classes="13">
+<coverage generated="1512783701806" clover="3.2.0">
+  <project timestamp="1512783701806" name="All files">
+    <metrics statements="137" coveredstatements="59" conditionals="12" coveredconditionals="8" methods="49" coveredmethods="12" elements="198" coveredelements="79" complexity="0" loc="137" ncloc="137" packages="6" files="15" classes="15">
       <package name="app">
-        <metrics statements="43" coveredstatements="25" conditionals="6" coveredconditionals="5" methods="10" coveredmethods="3"/>
+        <metrics statements="84" coveredstatements="45" conditionals="8" coveredconditionals="7" methods="17" coveredmethods="3"/>
+        <file name="api.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/api.js">
+          <metrics statements="26" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="0" type="stmt"/>
+          <line num="11" count="0" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="16" count="0" type="stmt"/>
+          <line num="18" count="0" type="stmt"/>
+          <line num="21" count="1" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="28" count="1" type="stmt"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="42" count="0" type="stmt"/>
+          <line num="45" count="1" type="stmt"/>
+          <line num="46" count="0" type="stmt"/>
+          <line num="48" count="0" type="stmt"/>
+          <line num="49" count="0" type="stmt"/>
+          <line num="52" count="1" type="stmt"/>
+        </file>
+        <file name="connection.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/connection.js">
+          <metrics statements="11" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="cond" truecount="2" falsecount="0"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="10" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="19" count="0" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+        </file>
         <file name="server.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/server.js">
-          <metrics statements="17" coveredstatements="15" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
+          <metrics statements="21" coveredstatements="19" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
           <line num="3" count="1" type="stmt"/>
           <line num="4" count="1" type="stmt"/>
           <line num="5" count="1" type="stmt"/>
@@ -13,16 +56,20 @@
           <line num="7" count="1" type="cond" truecount="2" falsecount="0"/>
           <line num="8" count="1" type="cond" truecount="2" falsecount="0"/>
           <line num="9" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
           <line num="11" count="1" type="stmt"/>
           <line num="13" count="1" type="stmt"/>
           <line num="15" count="1" type="stmt"/>
-          <line num="16" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
           <line num="19" count="1" type="stmt"/>
-          <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
-          <line num="21" count="0" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
+          <line num="21" count="1" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
           <line num="25" count="1" type="stmt"/>
-          <line num="33" count="1" type="stmt"/>
+          <line num="26" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
+          <line num="39" count="1" type="stmt"/>
         </file>
         <file name="socketServer.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/socketServer.js">
           <metrics statements="26" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="1"/>
@@ -103,9 +150,9 @@
         </file>
       </package>
       <package name="app.js.app.components.chat">
-        <metrics statements="25" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="0"/>
+        <metrics statements="23" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="0"/>
         <file name="ChatWindow.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/chat/ChatWindow.js">
-          <metrics statements="12" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
+          <metrics statements="10" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
           <line num="6" count="0" type="stmt"/>
           <line num="8" count="0" type="stmt"/>
           <line num="12" count="0" type="stmt"/>
@@ -115,8 +162,6 @@
           <line num="24" count="0" type="stmt"/>
           <line num="30" count="0" type="stmt"/>
           <line num="34" count="0" type="stmt"/>
-          <line num="38" count="0" type="stmt"/>
-          <line num="43" count="0" type="stmt"/>
           <line num="54" count="1" type="stmt"/>
         </file>
         <file name="GenerateNick.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/chat/GenerateNick.js">
@@ -151,9 +196,9 @@
         </file>
       </package>
       <package name="app.js.app.components.internal">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <file name="NotFound.js" path="/home/yooo/dbwebb-kurser/ramverk2/me/redovisa/app/js/app/components/internal/NotFound.js">
-          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
           <line num="3" count="1" type="stmt"/>
         </file>
       </package>
