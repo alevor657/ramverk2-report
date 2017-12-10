@@ -9,6 +9,20 @@
     npm i
     npm start
 
+### Docker containers
+
+In order to start application in either node6, 7 or 8 run following:
+
+    npm run node_latest
+    npm run node_6
+    npm run node_8
+
+In order to use database functionality you have to spin up a mongodb container:
+
+    docker-compose up -d mongodb node_latest
+
+Then you will be provided with server address
+
 ### Environment vars
 
     var port = process.env.DBWEBB_PORT || 1337;
@@ -27,14 +41,6 @@ Or you have a possibility to run the tests by starting up docker containers
 ##### Code coverage
 
 You can find in in coverage/lcov-report. Open up index.html file.
-
-### Docker containers
-
-In order to start application in either node6, 7 or 8 run following:
-
-    npm run node_latest
-    npm run node_6
-    npm run node_8
 
 
 -------------------------

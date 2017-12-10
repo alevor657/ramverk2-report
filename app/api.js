@@ -21,20 +21,22 @@ router.get('/users', async (req, res) => {
 router.post('/users', async (req, res) => {
     let data = req.body;
 
+    data._id = new ObjectId();
     await col.insert(data);
     res.end();
 });
 
 router.patch('/users/:userId', async (req, res) => {
     const { userId } = req.params;
-    const { name, place } = req.body;
+    const { name, place, age } = req.body;
 
     await col.updateOne(
         {'_id': ObjectId(userId)},
         {
             $set: {
                 name,
-                place
+                place,
+                age
             }
         }
     );

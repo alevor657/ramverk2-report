@@ -1,0 +1,37 @@
+.data-table {
+    width: 100%;
+
+    tr,
+    th,
+    td {
+        border: 1px solid black;
+    }
+
+    th,
+    td {
+        padding: 15px;
+        text-align: center;
+    }
+
+    border-collapse: collapse;
+    margin-bottom: 2em;
+
+    a {
+        text-decoration: underline;
+        color: red;
+        cursor: pointer;
+    }
+}
+
+.add-new-item {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    input {
+        margin: 1em;
+        padding: 0.2em;
+    }
+}

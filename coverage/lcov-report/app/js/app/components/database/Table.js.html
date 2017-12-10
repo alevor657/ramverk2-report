@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for app/js/app/components/chat/ChatWindow.js</title>
+    <title>Code coverage report for app/js/app/components/database/Table.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../../../prettify.css" />
     <link rel="stylesheet" href="../../../../../base.css" />
@@ -16,18 +16,18 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../../../../index.html">All files</a> / <a href="index.html">app/js/app/components/chat</a> ChatWindow.js
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">app/js/app/components/database</a> Table.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">10% </span>
+        <span class="strong">20% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/10</span>
+        <span class='fraction'>1/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>0/7</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">10% </span>
+        <span class="strong">20% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/10</span>
+        <span class='fraction'>1/5</span>
       </div>
     </div>
   </div>
@@ -109,25 +109,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -136,6 +120,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -161,65 +160,66 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 &nbsp;
-class ChatWindow extends Component {
+class Table extends Component {
 <span class="fstat-no" title="function not covered" >    co</span>nstructor(props) {
 <span class="cstat-no" title="statement not covered" >        super(props);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >        this.state = {</span>
-            msg: '',
-        };
-&nbsp;
-<span class="cstat-no" title="statement not covered" >        this.handleMessageInput = this.handleMessageInput.bind(this);</span>
-<span class="cstat-no" title="statement not covered" >        this.handleSend = this.handleSend.bind(this);</span>
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    ha</span>ndleMessageInput(e) {
-<span class="cstat-no" title="statement not covered" >        this.setState({</span>
-            msg: e.target.value
-        });
+<span class="fstat-no" title="function not covered" >    ha</span>ndleDelete(id) {
+<span class="cstat-no" title="statement not covered" >        this.props.deleteItem(id);</span>
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    ha</span>ndleSend() {
-<span class="cstat-no" title="statement not covered" >        this.props.sendMessage(this.state.msg);</span>
-<span class="cstat-no" title="statement not covered" >        this.setState({</span>
-            msg: ''
-        });
-    }
-&nbsp;
-<span class="fstat-no" title="function not covered" >    co</span>mponentDidUpdate() {
-<span class="cstat-no" title="statement not covered" >        this.lastMsg.scrollIntoView({ behaviour: 'smooth' });</span>
+<span class="fstat-no" title="function not covered" >    ha</span>ndleUpdate(id) {
+<span class="cstat-no" title="statement not covered" >        this.props.enableUpdatingMode(id);</span>
     }
 &nbsp;
 <span class="fstat-no" title="function not covered" >    re</span>nder() {
 <span class="cstat-no" title="statement not covered" >        return (</span>
-            &lt;div className="chat-window"&gt;
-                &lt;div className="messages"&gt;
-                    {this.props.history.map(<span class="fstat-no" title="function not covered" >(m</span>sg, i) =&gt; (
-                        &lt;p key={i}&gt;
-                            &lt;span&gt;&lt;b&gt;{msg.nick}&lt;/b&gt;: &lt;/span&gt;
-                            {msg.msg}
-                        &lt;/p&gt;
-                    ))}
-                    &lt;div ref={<span class="fstat-no" title="function not covered" >el</span> =&gt; this.lastMsg = el}&gt;&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div className="send-message"&gt;
-                    &lt;textarea value={this.state.msg} onChange={this.handleMessageInput}&gt;&lt;/textarea&gt;
-                    &lt;button onClick={this.handleSend}&gt;Send&lt;/button&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
+            &lt;table className="data-table"&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;ID&lt;/th&gt;
+                        &lt;th&gt;Name&lt;/th&gt;
+                        &lt;th&gt;Place&lt;/th&gt;
+                        &lt;th&gt;Age&lt;/th&gt;
+                        &lt;th&gt;Actions&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    {this.props.rows ? (
+                        this.props.rows.map(<span class="fstat-no" title="function not covered" >(r</span>ow, i) =&gt; (
+                            &lt;tr key={i}&gt;
+                                &lt;td&gt;{row._id}&lt;/td&gt;
+                                &lt;td&gt;{row.name}&lt;/td&gt;
+                                &lt;td&gt;{row.place}&lt;/td&gt;
+                                &lt;td&gt;{Number(row.age)}&lt;/td&gt;
+                                &lt;td&gt;
+                                    &lt;a onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; this.handleDelete(row._id)}&gt;Delete&lt;/a&gt;
+                                    &lt;br/&gt;
+                                    &lt;a onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; this.handleUpdate(row._id)}&gt;Update&lt;/a&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                        ))
+                    ) : (
+                        &lt;tr&gt;&lt;td&gt;&lt;p&gt;Fetching rows...&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+                    )}
+                &lt;/tbody&gt;
+            &lt;/table&gt;
         );
     }
 }
 &nbsp;
-ChatWindow.propTypes = {
-    sendMessage: PropTypes.func,
-    history: PropTypes.arrayOf(PropTypes.object)
+Table.propTypes = {
+    rows: PropTypes.arrayOf(PropTypes.object),
+    deleteItem: PropTypes.func,
+    enableUpdatingMode: PropTypes.func
 };
 &nbsp;
-export default ChatWindow;
+export default Table;
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->

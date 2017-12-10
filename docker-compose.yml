@@ -11,10 +11,13 @@ services:
 
         environment:
           - DBWEBB_PORT=8090
+          - DBWEBB_DSN=mongodb://mongodb:27017/users
         ports:
             - "8090:8090"
         command:
             "npm start"
+        links:
+            - mongodb
 
     node8:
         container_name: node8
@@ -27,26 +30,14 @@ services:
 
         environment:
           - DBWEBB_PORT=8088
+          - DBWEBB_DSN=mongodb://mongodb:27017/users
 
         ports:
             - "8088:8088"
         command: "npm start"
+        links:
+            - mongodb
 
-    node6:
-        container_name: node6
-        build:
-            context: .
-            dockerfile: docker/Dockerfile-node-6-alpine
-        volumes:
-            - ./:/app/
-            - /app/node_modules
-
-        environment:
-          - DBWEBB_PORT=8086
-
-        ports:
-            - "8086:8086"
-        command: "npm start"
     mongodb:
             image: mongo
             environment:
