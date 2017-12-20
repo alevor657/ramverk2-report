@@ -3,7 +3,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var socketChat = require('./socketServer');
+var socketChat = require('bth-socketio-chat');
 var port = process.env.DBWEBB_PORT || 1337;
 var socketioPort = process.env.DBWEBB_SOCKETIO_PORT || 1340;
 var staticFiles = path.join(__dirname, '../dist');

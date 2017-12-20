@@ -59,6 +59,7 @@
     "dependencies": {
         "axios": "^0.17.1",
         "body-parser": "^1.18.2",
+        "bth-socketio-chat": "^1.0.0",
         "express": "^4.16.2",
         "mongodb": "^2.2.33",
         "prop-types": "^15.6.0",

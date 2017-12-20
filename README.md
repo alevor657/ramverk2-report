@@ -22,6 +22,7 @@ In order to use database functionality you have to spin up a mongodb container:
     docker-compose up -d mongodb node_latest
 
 Then you will be provided with server address
+Observe that socket server does not work when using docker!
 
 ### Environment vars
 
