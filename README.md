@@ -9,19 +9,23 @@
     npm i
     npm start
 
+If you modify something in the code use `npm run webpack`
+
 ### Docker containers
 
-In order to start application in either node6, 7 or 8 run following:
+In order to start application in either node8 or latest run following:
 
     npm run node_latest
-    npm run node_6
     npm run node_8
+
+My server code needs at least node 8 to function properly.
 
 In order to use database functionality you have to spin up a mongodb container:
 
     docker-compose up -d mongodb node_latest
 
 Then you will be provided with server address
+Observe that socket server does not work when using docker!
 
 ### Environment vars
 
@@ -35,7 +39,6 @@ Then you will be provided with server address
 Or you have a possibility to run the tests by starting up docker containers
 
     npm run test_latest
-    npm run test_6
     npm run test_8
 
 ##### Code coverage
@@ -50,5 +53,7 @@ Report application build in react with webpack
 I also use redux, react-router
 
 ### Application is available at
+
+** Not the latest version! **
 
 http://80.78.218.152:1337/

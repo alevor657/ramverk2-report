@@ -12,10 +12,8 @@
         "jest": "jest --coverage",
         "coverage": "open('coverage/lcov-report/index.html')",
         "node_latest": "docker-compose up node_latest",
-        "node_6": "docker-compose up node6",
         "node_8": "docker-compose up node8",
         "test_latest": "docker-compose run node_latest npm test",
-        "test_6": "docker-compose run node6 npm test",
         "test_8": "docker-compose run node8 npm test"
     },
     "repository": {
@@ -40,7 +38,7 @@
         "css-loader": "^0.28.7",
         "enzyme": "^3.2.0",
         "enzyme-adapter-react-16": "^1.1.0",
-        "eslint": "^4.13.0",
+        "eslint": "^4.13.1",
         "eslint-plugin-jest": "^21.4.2",
         "eslint-plugin-react": "^7.5.1",
         "file-loader": "^1.1.5",
@@ -59,6 +57,7 @@
     "dependencies": {
         "axios": "^0.17.1",
         "body-parser": "^1.18.2",
+        "bth-socketio-chat": "^1.0.0",
         "express": "^4.16.2",
         "mongodb": "^2.2.33",
         "prop-types": "^15.6.0",

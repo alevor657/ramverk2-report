@@ -91,5 +91,98 @@ exports[`Report page renders 1`] = `
   <p>
     Som sagt, jag använder JWT, Express, mongoDB, mongoose, morgan, joi (för att verifiera data) och lite andra bra att ha saker. Jag kommer att skapa en React klient till APIet, så att man kan registrera sig och få tillgång till sin chatthistorik (jag planerar att skapa en chatt). Så är min plan. 
   </p>
+  <h2>
+    kmom04
+  </h2>
+  <h3>
+    Är du ny på realtidsprogrammering eller har du gjort liknande tidigare?
+  </h3>
+  <p>
+    Hela saken med websockets var ny för mig. Jag har kodat något liknande. Jag har bara använt det i andra webbapplikationer. Man ser realtids funktionalitet ofta på de olika byggtjänster, jag tror att de fungerar ungefär på samma sätt när de broadcastar terminalet vid en bygge. De var riktigt kult att lära sig mer om det.
+  </p>
+  <h3>
+    Hur gick det att jobba med konceptet realtidsprogrammering i webben, några reflektioner?
+  </h3>
+  <p>
+    Jag har börjat direkt med socket.io och det kändes ganska enkelt. Det har nästan alldrig krånglat efter jag har läst igenom artikeln och tittat på ett par videor på youtube. Deras docks är också ganska bra. Nackdelen för mig var att jag fick inte jobba med de native browers websockets, men jag tror att jag fattar principen ändå. Dessutom så erbjuder socket.io fallbacks för kompatibilitet.
+  </p>
+  <h3>
+    Berätta om din chatt som du integrerade i redovisa-sidan.
+  </h3>
+  <p>
+    Jag använder React i fronten, så det var ganska spännande att faktiskt använda de fördelar som React erbjuder - jag behöver inte jobba mot DOM element direkt, allting är abstraherat i JS. Så, när man kommer in på chatt sidan så sker kopplingen mot socket server direkt. Efter man väljer smeknamn så uppdaterar servern listan på användaren. All data som behövs i fronten ligger i state i Chatt komponenten och flödar ner till child-komponenter. Ganska simpelt. Efter att man är klar med chatten så disconnectar man och listan på användaren uppdateras återigen.
+  </p>
+  <h3>
+    Berätta om den realtidsfunktionalitet du väljer att integrera i din klient/server applikation.
+  </h3>
+  <p>
+    Min plan att skapa en riktigt funktionalitetsrik chatt som Gitter, typ. Men jag väljer att skjuta upp implementationen till projektet. Jag har nu en chat klass som jag kan utgå ifrån, jag kommer att refaktorera den så att den blir mer flexibel.
+  </p>
+  <h2>
+    kmom05
+  </h2>
+  <h3>
+    Hur gick det att komma igång med databasen MongoDB?
+  </h3>
+  <p>
+    Det gick nästan smärtfritt. Jag trodde att jag kommer att använda driver v3 men det var ingen dokumentation på mongodb.com så jag körde på 2.3 istället. Dock så dök dokumentationen upp nästa dag men jag. Jag har redan använt mongo med mongoose i min applikation, så det var inget nytt. Jag använder ingen docker där men har redan implementerat CRUD system, så det som krånglade mest var React delen.
+  </p>
+  <h3>
+    Vilken syn har du på databaser inom konceptet NoSQL?
+  </h3>
+  <p>
+    Det är en intressant idé tycker jag, men utifrån min egen perspektiv så sperlar det faktiskt ingen roll. Jag jobbar inte med stora datamängder, så jag kan välja vad jag än vill. NoSQL databaser ger mer frihet, däremot garanterar de inte ACID (atomicity, consistency, isolation, durability). Jag har inte så mycket erfarenhet med för att besvara detta frågan på ett bra sätt, men om det är så att jag jobbar i node då skulle jag troligen jobba med mongo istället för andra SQL databaser bara för att jag slipper skriva SQL satser.
+  </p>
+  <h3>
+    Reflektera över skillnader och likheter mellan relationsdatabaser och databaser inom NoSQL.
+  </h3>
+  <p>
+    SQL baserade databaser använder sig av SQL frågespråk för att hämta data. De har också constraints, som minskar antalet felkällor i programmet. NoSQL betyder not only sql, så att det är möjligt att använda frågespråket med vissa nosql databaser. I NoSQL databaser struktureras inte data i tabeller, oftast struktureras datan i dokument, dock så finns det olika typer av databaser som gör det på olika sätt. Man behöver inte skapa tabeller eller något utan att bara lägga in saker. SQL och NoSQL databaser skalar sig på olika sätt. För att skala upp en relationsbaserat databas så lägger man till mer minne eller diskutrymme eller snabbare processor. Detta kallas för “scale in”. NoSQL baserade databaser skalas genom att lägga till flera noder (maskiner) till cluster.
+  </p>
+  <h3>
+    Vilka är dina tankar om asynkron programmering med JavaScript?
+  </h3>
+  <p>
+    Det är smidigt att kunna använda asynkron programmering. Nuförtiden så kan man även skriva asynkron kod som flödar synkront, så att man behöver inte dra nytta av prestanda om man inte vill eller om det spelar ingel roll. Till exempel när man gör en databasfråga så spelar det ingen roll om man använder sig av promise.then eller async await för att servern ska inte svara innan den fått tag i datan. Asynkron programmering verkar inte vara ett problem för mig.
+  </p>
+  <h3>
+    Hur känner du för Docker och det sättet vi jobbar med tjänster i kontainrar?
+  </h3>
+  <p>
+    Jag jag inte proffs med docker men med hjälp av dokumentationen så kan jag lösa alla problem som uppstår. Jag förstår vad det kan och inte, så jag har inga problem med Docker. Det är smidigt att jobba i kontainrar tycker jag. Det ger mer testing möjligheter och det blir enklare att deploy:a applikationer.
+  </p>
+  <p>
+    OBS!
+  </p>
+  <p>
+    Jag hostar inte längre min sida
+  </p>
+  <h2>
+    kmom05
+  </h2>
+  <h3>
+    Reflektera över vikten av infrastruktur för moduler för ett programmeringsspråk.
+  </h3>
+  <p>
+    Moduler är något som driver utvecklingen framåt. Moduler gör det möjligt att skriva bättre, snyggare kod genom att abstrahera delar av programmet någon annanstans. Separationen i programmering är väldigt viktig. Det blir enklare att testa och återanvända kod och detta är hur bra som helst på alla möjliga sätt och alla möjliga perspektiv. Det sparar tid och pengar, gör koden snyggare och enklare att läsa, gör det enklare att testa sina program. 
+  </p>
+  <h3>
+    Vill du ge dig på att förklara att just npm är den tjänsten som växt snabbast av de modulerkataloger som presenteras på webbplatsen “Module Counts”?
+  </h3>
+  <p>
+    Statistiken visar att fler och fler moduler publiceras på npm. Det finns ett par gånder så mycket moduler på npm än det finns på t. ex. pip eller packagist. Det är svårt att säga varför det händer, kanske för att JS är ett populärt programmeringsspråk. Men hursomhelst så är JS communityn väldigt aktiv nuförtiden. 
+  </p>
+  <h3>
+    Reflektera över hur arbetet gick att välja, separera, publisera och sedan åter integrera module i din applikation.
+  </h3>
+  <p>
+    Det var ganska enkelt för att jag hade allting separerat redan då. Dock så har jag inte lyckats att göra modulen verkligen återanvändbar, men det kräver lite mer erfarenhet med tekniken. Dock så fungerar modulen för min applikation perfekt, precis som det gjorde då den var en del av kod.
+  </p>
+  <h3>
+    Sista uppgiften om att dokumentera och färdigställa redovisa-sidan, tog det mycket tid eller hade du allt klart?
+  </h3>
+  <p>
+    Nää, jag hade allting klart sedan tidigare. Jag testade bara så att allting fungerar som vanligt, redigerade lite och så var jag klar. Observera att jag inte stödjer node äldre än 8.
+  </p>
 </div>
 `;

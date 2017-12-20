@@ -1,8 +1,8 @@
 const express = require('express');
-let router = express.Router();
 const connect = require('./connection').connect;
 const disconnect = require('./connection').disconnect;
 const ObjectId = require('mongodb').ObjectId;
+let router = express.Router();
 
 let col;
 
